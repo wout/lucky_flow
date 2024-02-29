@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Crystal Docs 1.10.1">
+<meta name="crystal_docs.project_version" content="main">
+<meta name="crystal_docs.project_name" content="lucky_flow">
+
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/doc.js"></script>
+
+  <meta name="repository-name" content="lucky_flow">
+  <title>LuckyFlow::FindElement - lucky_flow main</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill="currentColor" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<input type="checkbox" id="sidebar-btn">
+<label for="sidebar-btn" id="sidebar-btn-label">
+  <svg class="open" xmlns="http://www.w3.org/2000/svg" height="2em" width="2em" viewBox="0 0 512 512"><title>Open Sidebar</title><path fill="currentColor" d="M80 96v64h352V96H80zm0 112v64h352v-64H80zm0 112v64h352v-64H80z"></path></svg>
+  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512"><title>Close Sidebar</title><path fill="currentColor" d="m118.6 73.4-45.2 45.2L210.7 256 73.4 393.4l45.2 45.2L256 301.3l137.4 137.3 45.2-45.2L301.3 256l137.3-137.4-45.2-45.2L256 210.7Z"></path></svg>
+</label>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../index.html">
+          lucky_flow
+        </a>
+      </h1>
+
+      <span class="project-version">
+        main
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="lucky_flow/AuthenticLuckyFlowHelpers" data-name="authenticluckyflowhelpers">
+      <a href="../AuthenticLuckyFlowHelpers.html">AuthenticLuckyFlowHelpers</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/AvramLuckyFlowHelpers" data-name="avramluckyflowhelpers">
+      <a href="../AvramLuckyFlowHelpers.html">AvramLuckyFlowHelpers</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyActionLuckyFlowHelpers" data-name="luckyactionluckyflowhelpers">
+      <a href="../LuckyActionLuckyFlowHelpers.html">LuckyActionLuckyFlowHelpers</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="lucky_flow/LuckyFlow" data-name="luckyflow">
+      <a href="../LuckyFlow.html">LuckyFlow</a>
+      
+        <ul>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/Driver" data-name="luckyflow::driver">
+      <a href="../LuckyFlow/Driver.html">Driver</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/DriverInstallationError" data-name="luckyflow::driverinstallationerror">
+      <a href="../LuckyFlow/DriverInstallationError.html">DriverInstallationError</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/Element" data-name="luckyflow::element">
+      <a href="../LuckyFlow/Element.html">Element</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/ElementNotFoundError" data-name="luckyflow::elementnotfounderror">
+      <a href="../LuckyFlow/ElementNotFoundError.html">ElementNotFoundError</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/Error" data-name="luckyflow::error">
+      <a href="../LuckyFlow/Error.html">Error</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/ErrorMessageWhenNotFound" data-name="luckyflow::errormessagewhennotfound">
+      <a href="../LuckyFlow/ErrorMessageWhenNotFound.html">ErrorMessageWhenNotFound</a>
+      
+    </li>
+  
+  <li class="parent " data-id="lucky_flow/LuckyFlow/Expectations" data-name="luckyflow::expectations">
+      <a href="../LuckyFlow/Expectations.html">Expectations</a>
+      
+        <ul>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/Expectations/HaveCurrentPathExpectation" data-name="luckyflow::expectations::havecurrentpathexpectation">
+      <a href="../LuckyFlow/Expectations/HaveCurrentPathExpectation.html">HaveCurrentPathExpectation</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/Expectations/HaveElementExpectation" data-name="luckyflow::expectations::haveelementexpectation">
+      <a href="../LuckyFlow/Expectations/HaveElementExpectation.html">HaveElementExpectation</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/Expectations/HaveTextExpectation" data-name="luckyflow::expectations::havetextexpectation">
+      <a href="../LuckyFlow/Expectations/HaveTextExpectation.html">HaveTextExpectation</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" current" data-id="lucky_flow/LuckyFlow/FindElement" data-name="luckyflow::findelement">
+      <a href="../LuckyFlow/FindElement.html">FindElement</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/HabitatSettings" data-name="luckyflow::habitatsettings">
+      <a href="../LuckyFlow/HabitatSettings.html">HabitatSettings</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/InfiniteRedirectError" data-name="luckyflow::infiniteredirecterror">
+      <a href="../LuckyFlow/InfiniteRedirectError.html">InfiniteRedirectError</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/InvalidMultiSelectError" data-name="luckyflow::invalidmultiselecterror">
+      <a href="../LuckyFlow/InvalidMultiSelectError.html">InvalidMultiSelectError</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/InvalidOperationError" data-name="luckyflow::invalidoperationerror">
+      <a href="../LuckyFlow/InvalidOperationError.html">InvalidOperationError</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/NotSupportedByDriverError" data-name="luckyflow::notsupportedbydrivererror">
+      <a href="../LuckyFlow/NotSupportedByDriverError.html">NotSupportedByDriverError</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/NotSupportedByElementError" data-name="luckyflow::notsupportedbyelementerror">
+      <a href="../LuckyFlow/NotSupportedByElementError.html">NotSupportedByElementError</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/Registry" data-name="luckyflow::registry">
+      <a href="../LuckyFlow/Registry.html">Registry</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/Selector" data-name="luckyflow::selector">
+      <a href="../LuckyFlow/Selector.html">Selector</a>
+      
+    </li>
+  
+  <li class="parent " data-id="lucky_flow/LuckyFlow/Selenium" data-name="luckyflow::selenium">
+      <a href="../LuckyFlow/Selenium.html">Selenium</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="lucky_flow/LuckyFlow/Selenium/Chrome" data-name="luckyflow::selenium::chrome">
+      <a href="../LuckyFlow/Selenium/Chrome.html">Chrome</a>
+      
+        <ul>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/Selenium/Chrome/Driver" data-name="luckyflow::selenium::chrome::driver">
+      <a href="../LuckyFlow/Selenium/Chrome/Driver.html">Driver</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/Selenium/Driver" data-name="luckyflow::selenium::driver">
+      <a href="../LuckyFlow/Selenium/Driver.html">Driver</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/Selenium/Element" data-name="luckyflow::selenium::element">
+      <a href="../LuckyFlow/Selenium/Element.html">Element</a>
+      
+    </li>
+  
+  <li class="parent " data-id="lucky_flow/LuckyFlow/Selenium/Firefox" data-name="luckyflow::selenium::firefox">
+      <a href="../LuckyFlow/Selenium/Firefox.html">Firefox</a>
+      
+        <ul>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/Selenium/Firefox/Driver" data-name="luckyflow::selenium::firefox::driver">
+      <a href="../LuckyFlow/Selenium/Firefox/Driver.html">Driver</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/Spec" data-name="luckyflow::spec">
+      <a href="../LuckyFlow/Spec.html">Spec</a>
+      
+    </li>
+  
+  <li class="parent " data-id="lucky_flow/LuckyFlow/Webless" data-name="luckyflow::webless">
+      <a href="../LuckyFlow/Webless.html">Webless</a>
+      
+        <ul>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/Webless/Browser" data-name="luckyflow::webless::browser">
+      <a href="../LuckyFlow/Webless/Browser.html">Browser</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/Webless/Driver" data-name="luckyflow::webless::driver">
+      <a href="../LuckyFlow/Webless/Driver.html">Driver</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/Webless/Element" data-name="luckyflow::webless::element">
+      <a href="../LuckyFlow/Webless/Element.html">Element</a>
+      
+    </li>
+  
+  <li class=" " data-id="lucky_flow/LuckyFlow/Webless/Form" data-name="luckyflow::webless::form">
+      <a href="../LuckyFlow/Webless/Form.html">Form</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="lucky_flow/Spec" data-name="spec">
+      <a href="../Spec.html">Spec</a>
+      
+        <ul>
+  
+  <li class=" " data-id="lucky_flow/Spec/Item" data-name="spec::item">
+      <a href="../Spec/Item.html">Item</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> LuckyFlow::<wbr>FindElement
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../LuckyFlow/FindElement.html">LuckyFlow::FindElement</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>
+    <a id="overview" class="anchor" href="#overview">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Overview
+  </h2>
+
+  <p>Find element on a page with a retry</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/wout/lucky_flow/blob/9f0dcbeca9deea2df52a05656baec1cf7ef2a18d/src/lucky_flow/find_element.cr#L2" target="_blank">
+        lucky_flow/find_element.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>
+    <a id="constructors" class="anchor" href="#constructors">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructors
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28driver%3ALuckyFlow%3A%3ADriver%2Cselector%2Ctextinner_text%3ANil%7CString%3Dnil%29-class-method" class="signature"><strong>.new</strong>(driver : LuckyFlow::Driver, selector, text inner_text : Nil | String = <span class="n">nil</span>)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>
+    <a id="class-method-summary" class="anchor" href="#class-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Class Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#run%28%2Aargs%2C%2A%2Anamed_args%29%3ALuckyFlow%3A%3AElement-class-method" class="signature"><strong>.run</strong>(*args, **named_args) : LuckyFlow::Element</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#run%3ALuckyFlow%3A%3AElement-instance-method" class="signature"><strong>#run</strong> : LuckyFlow::Element</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>
+    <a id="constructor-detail" class="anchor" href="#constructor-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructor Detail
+  </h2>
+  
+    <div class="entry-detail" id="new(driver:LuckyFlow::Driver,selector,textinner_text:Nil|String=nil)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(driver : <a href="../LuckyFlow/Driver.html">LuckyFlow::Driver</a>, selector, text inner_text : Nil | String = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#new%28driver%3ALuckyFlow%3A%3ADriver%2Cselector%2Ctextinner_text%3ANil%7CString%3Dnil%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/wout/lucky_flow/blob/9f0dcbeca9deea2df52a05656baec1cf7ef2a18d/src/lucky_flow/find_element.cr#L8" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>
+    <a id="class-method-detail" class="anchor" href="#class-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Class Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="run(*args,**named_args):LuckyFlow::Element-class-method">
+      <div class="signature">
+        
+        def self.<strong>run</strong>(*args, **named_args) : <a href="../LuckyFlow/Element.html">LuckyFlow::Element</a>
+
+        <a class="method-permalink" href="#run%28%2Aargs%2C%2A%2Anamed_args%29%3ALuckyFlow%3A%3AElement-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/wout/lucky_flow/blob/9f0dcbeca9deea2df52a05656baec1cf7ef2a18d/src/lucky_flow/find_element.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="run:LuckyFlow::Element-instance-method">
+      <div class="signature">
+        
+        def <strong>run</strong> : <a href="../LuckyFlow/Element.html">LuckyFlow::Element</a>
+
+        <a class="method-permalink" href="#run%3ALuckyFlow%3A%3AElement-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/wout/lucky_flow/blob/9f0dcbeca9deea2df52a05656baec1cf7ef2a18d/src/lucky_flow/find_element.cr#L16" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+</div>
+
+</body>
+</html>
