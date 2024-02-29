@@ -17,6 +17,7 @@ jobs:
       - run: shards install
       - run: crystal tool format --check
       - run: ./bin/ameba
+
   webless_specs:
     strategy:
       fail-fast: false
@@ -28,6 +29,7 @@ jobs:
             crystal: latest
           - os: macos-latest
             crystal: latest
+
     runs-on: ${{matrix.os}}
     steps:
       - uses: actions/checkout@v3
@@ -42,6 +44,7 @@ jobs:
       - run: crystal spec --tag ~headless_chrome
         env:
           LUCKYFLOW_DRIVER: webless
+
   selenium_specs:
     strategy:
       fail-fast: false
@@ -53,6 +56,7 @@ jobs:
             crystal: latest
           - os: macos-latest
             crystal: latest
+
     runs-on: ${{matrix.os}}
     steps:
       - uses: actions/checkout@v3
